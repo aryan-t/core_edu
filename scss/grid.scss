@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col-3 {
+  flex: 1 0 0%;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.33%;
+}

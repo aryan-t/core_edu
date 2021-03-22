@@ -1,0 +1,68 @@
+@import "variables";
+@import "reset";
+@import "grid";
+
+body {
+  background: #ffffff;
+  font-family: $themeFontFamily;
+  font-size: $themeFontSize;
+  font-weight: normal;
+}
+
+.section {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.card {
+  $self: &;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+  &__media {
+    border-radius: $borderRadius;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+  &__heading {
+    color: $colorTheme;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  &__type {
+    margin-bottom: 0.5rem;
+  }
+  &__link {
+    color: $colorTheme;
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    transition: $transition;
+
+    &:hover {
+      padding-left: 1.25rem;
+    }
+  }
+
+  &--hasbg {
+    border-radius: $borderRadius;
+    padding: 1.5rem;
+  }
+
+  &--themecolor {
+    background-color: $colorTheme;
+
+    #{ $self }__heading {
+      color: #ffffff;
+    }
+    #{ $self }__link {
+      color: #ffffff;
+    }
+  }
+}
